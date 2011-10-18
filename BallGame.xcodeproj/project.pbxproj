@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		264DDAB8144CCB40001179B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDAB7144CCB40001179B0 /* UIKit.framework */; };
+		264DDABA144CCB40001179B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDAB9144CCB40001179B0 /* Foundation.framework */; };
+		264DDABC144CCB40001179B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDABB144CCB40001179B0 /* CoreGraphics.framework */; };
+		264DDAC2144CCB40001179B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 264DDAC0144CCB40001179B0 /* InfoPlist.strings */; };
+		264DDAC4144CCB40001179B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DDAC3144CCB40001179B0 /* main.m */; };
+		264DDAC8144CCB40001179B0 /* BallGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DDAC7144CCB40001179B0 /* BallGameAppDelegate.m */; };
+		264DDACE144CCB40001179B0 /* BallGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DDACD144CCB40001179B0 /* BallGameViewController.m */; };
+		264DDAD1144CCB40001179B0 /* BallGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264DDACF144CCB40001179B0 /* BallGameViewController.xib */; };
+		264DDAD9144CCB40001179B0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDAD8144CCB40001179B0 /* SenTestingKit.framework */; };
+		264DDADA144CCB40001179B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDAB7144CCB40001179B0 /* UIKit.framework */; };
+		264DDADB144CCB40001179B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDAB9144CCB40001179B0 /* Foundation.framework */; };
+		264DDADC144CCB40001179B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264DDABB144CCB40001179B0 /* CoreGraphics.framework */; };
+		264DDAE4144CCB40001179B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 264DDAE2144CCB40001179B0 /* InfoPlist.strings */; };
+		264DDAE6144CCB40001179B0 /* BallGameTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 264DDAE5144CCB40001179B0 /* BallGameTests.h */; };
+		264DDAE8144CCB40001179B0 /* BallGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 264DDAE7144CCB40001179B0 /* BallGameTests.m */; };
+		264DDAF3144CCEF1001179B0 /* enemyBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 264DDAF1144CCEF1001179B0 /* enemyBall.png */; };
+		264DDAF4144CCEF1001179B0 /* playerBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 264DDAF2144CCEF1001179B0 /* playerBall.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		264DDADD144CCB40001179B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 264DDAAA144CCB40001179B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 264DDAB2144CCB40001179B0;
+			remoteInfo = BallGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		264DDAB3144CCB40001179B0 /* BallGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		264DDAB7144CCB40001179B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		264DDAB9144CCB40001179B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		264DDABB144CCB40001179B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		264DDABF144CCB40001179B0 /* BallGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BallGame-Info.plist"; sourceTree = "<group>"; };
+		264DDAC1144CCB40001179B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		264DDAC3144CCB40001179B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		264DDAC5144CCB40001179B0 /* BallGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BallGame-Prefix.pch"; sourceTree = "<group>"; };
+		264DDAC6144CCB40001179B0 /* BallGameAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallGameAppDelegate.h; sourceTree = "<group>"; };
+		264DDAC7144CCB40001179B0 /* BallGameAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallGameAppDelegate.m; sourceTree = "<group>"; };
+		264DDACC144CCB40001179B0 /* BallGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallGameViewController.h; sourceTree = "<group>"; };
+		264DDACD144CCB40001179B0 /* BallGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallGameViewController.m; sourceTree = "<group>"; };
+		264DDAD0144CCB40001179B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BallGameViewController.xib; sourceTree = "<group>"; };
+		264DDAD7144CCB40001179B0 /* BallGameTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallGameTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		264DDAD8144CCB40001179B0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		264DDAE1144CCB40001179B0 /* BallGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BallGameTests-Info.plist"; sourceTree = "<group>"; };
+		264DDAE3144CCB40001179B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		264DDAE5144CCB40001179B0 /* BallGameTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallGameTests.h; sourceTree = "<group>"; };
+		264DDAE7144CCB40001179B0 /* BallGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallGameTests.m; sourceTree = "<group>"; };
+		264DDAF1144CCEF1001179B0 /* enemyBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enemyBall.png; sourceTree = "<group>"; };
+		264DDAF2144CCEF1001179B0 /* playerBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = playerBall.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		264DDAB0144CCB40001179B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAB8144CCB40001179B0 /* UIKit.framework in Frameworks */,
+				264DDABA144CCB40001179B0 /* Foundation.framework in Frameworks */,
+				264DDABC144CCB40001179B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264DDAD3144CCB40001179B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAD9144CCB40001179B0 /* SenTestingKit.framework in Frameworks */,
+				264DDADA144CCB40001179B0 /* UIKit.framework in Frameworks */,
+				264DDADB144CCB40001179B0 /* Foundation.framework in Frameworks */,
+				264DDADC144CCB40001179B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264DDAA8144CCB40001179B0 = {
+			isa = PBXGroup;
+			children = (
+				264DDABD144CCB40001179B0 /* BallGame */,
+				264DDADF144CCB40001179B0 /* BallGameTests */,
+				264DDAB6144CCB40001179B0 /* Frameworks */,
+				264DDAB4144CCB40001179B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		264DDAB4144CCB40001179B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				264DDAB3144CCB40001179B0 /* BallGame.app */,
+				264DDAD7144CCB40001179B0 /* BallGameTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		264DDAB6144CCB40001179B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				264DDAB7144CCB40001179B0 /* UIKit.framework */,
+				264DDAB9144CCB40001179B0 /* Foundation.framework */,
+				264DDABB144CCB40001179B0 /* CoreGraphics.framework */,
+				264DDAD8144CCB40001179B0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		264DDABD144CCB40001179B0 /* BallGame */ = {
+			isa = PBXGroup;
+			children = (
+				264DDAC6144CCB40001179B0 /* BallGameAppDelegate.h */,
+				264DDAC7144CCB40001179B0 /* BallGameAppDelegate.m */,
+				264DDACC144CCB40001179B0 /* BallGameViewController.h */,
+				264DDACD144CCB40001179B0 /* BallGameViewController.m */,
+				264DDACF144CCB40001179B0 /* BallGameViewController.xib */,
+				264DDAF1144CCEF1001179B0 /* enemyBall.png */,
+				264DDAF2144CCEF1001179B0 /* playerBall.jpg */,
+				264DDABE144CCB40001179B0 /* Supporting Files */,
+			);
+			path = BallGame;
+			sourceTree = "<group>";
+		};
+		264DDABE144CCB40001179B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				264DDABF144CCB40001179B0 /* BallGame-Info.plist */,
+				264DDAC0144CCB40001179B0 /* InfoPlist.strings */,
+				264DDAC3144CCB40001179B0 /* main.m */,
+				264DDAC5144CCB40001179B0 /* BallGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		264DDADF144CCB40001179B0 /* BallGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				264DDAE5144CCB40001179B0 /* BallGameTests.h */,
+				264DDAE7144CCB40001179B0 /* BallGameTests.m */,
+				264DDAE0144CCB40001179B0 /* Supporting Files */,
+			);
+			path = BallGameTests;
+			sourceTree = "<group>";
+		};
+		264DDAE0144CCB40001179B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				264DDAE1144CCB40001179B0 /* BallGameTests-Info.plist */,
+				264DDAE2144CCB40001179B0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		264DDAB2144CCB40001179B0 /* BallGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264DDAEB144CCB40001179B0 /* Build configuration list for PBXNativeTarget "BallGame" */;
+			buildPhases = (
+				264DDAAF144CCB40001179B0 /* Sources */,
+				264DDAB0144CCB40001179B0 /* Frameworks */,
+				264DDAB1144CCB40001179B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BallGame;
+			productName = BallGame;
+			productReference = 264DDAB3144CCB40001179B0 /* BallGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		264DDAD6144CCB40001179B0 /* BallGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 264DDAEE144CCB40001179B0 /* Build configuration list for PBXNativeTarget "BallGameTests" */;
+			buildPhases = (
+				264DDAD2144CCB40001179B0 /* Sources */,
+				264DDAD3144CCB40001179B0 /* Frameworks */,
+				264DDAD4144CCB40001179B0 /* Resources */,
+				264DDAD5144CCB40001179B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				264DDADE144CCB40001179B0 /* PBXTargetDependency */,
+			);
+			name = BallGameTests;
+			productName = BallGameTests;
+			productReference = 264DDAD7144CCB40001179B0 /* BallGameTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		264DDAAA144CCB40001179B0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 264DDAAD144CCB40001179B0 /* Build configuration list for PBXProject "BallGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 264DDAA8144CCB40001179B0;
+			productRefGroup = 264DDAB4144CCB40001179B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				264DDAB2144CCB40001179B0 /* BallGame */,
+				264DDAD6144CCB40001179B0 /* BallGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		264DDAB1144CCB40001179B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAC2144CCB40001179B0 /* InfoPlist.strings in Resources */,
+				264DDAD1144CCB40001179B0 /* BallGameViewController.xib in Resources */,
+				264DDAF3144CCEF1001179B0 /* enemyBall.png in Resources */,
+				264DDAF4144CCEF1001179B0 /* playerBall.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264DDAD4144CCB40001179B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAE4144CCB40001179B0 /* InfoPlist.strings in Resources */,
+				264DDAE6144CCB40001179B0 /* BallGameTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		264DDAD5144CCB40001179B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		264DDAAF144CCB40001179B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAC4144CCB40001179B0 /* main.m in Sources */,
+				264DDAC8144CCB40001179B0 /* BallGameAppDelegate.m in Sources */,
+				264DDACE144CCB40001179B0 /* BallGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264DDAD2144CCB40001179B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264DDAE8144CCB40001179B0 /* BallGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		264DDADE144CCB40001179B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 264DDAB2144CCB40001179B0 /* BallGame */;
+			targetProxy = 264DDADD144CCB40001179B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		264DDAC0144CCB40001179B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264DDAC1144CCB40001179B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		264DDACF144CCB40001179B0 /* BallGameViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264DDAD0144CCB40001179B0 /* en */,
+			);
+			name = BallGameViewController.xib;
+			sourceTree = "<group>";
+		};
+		264DDAE2144CCB40001179B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				264DDAE3144CCB40001179B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		264DDAE9144CCB40001179B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		264DDAEA144CCB40001179B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		264DDAEC144CCB40001179B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallGame/BallGame-Prefix.pch";
+				INFOPLIST_FILE = "BallGame/BallGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		264DDAED144CCB40001179B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallGame/BallGame-Prefix.pch";
+				INFOPLIST_FILE = "BallGame/BallGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		264DDAEF144CCB40001179B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BallGame.app/BallGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallGame/BallGame-Prefix.pch";
+				INFOPLIST_FILE = "BallGameTests/BallGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		264DDAF0144CCB40001179B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BallGame.app/BallGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BallGame/BallGame-Prefix.pch";
+				INFOPLIST_FILE = "BallGameTests/BallGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		264DDAAD144CCB40001179B0 /* Build configuration list for PBXProject "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264DDAE9144CCB40001179B0 /* Debug */,
+				264DDAEA144CCB40001179B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		264DDAEB144CCB40001179B0 /* Build configuration list for PBXNativeTarget "BallGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264DDAEC144CCB40001179B0 /* Debug */,
+				264DDAED144CCB40001179B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		264DDAEE144CCB40001179B0 /* Build configuration list for PBXNativeTarget "BallGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				264DDAEF144CCB40001179B0 /* Debug */,
+				264DDAF0144CCB40001179B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 264DDAAA144CCB40001179B0 /* Project object */;
+}
